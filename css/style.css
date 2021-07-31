@@ -164,7 +164,11 @@ li {
   color: #333;
 }
 
-.gallery-item:hover {
+.products-item:hover {
+  opacity: .9;
+}
+
+.more:hover {
   opacity: .9;
 }
 
