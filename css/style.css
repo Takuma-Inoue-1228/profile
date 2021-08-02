@@ -56,6 +56,7 @@ li {
   margin-bottom: 40px;
   letter-spacing: .05em;
   color: #333;
+  text-align: center;
 }
 
 .lead {
@@ -146,6 +147,20 @@ li {
   line-height: 1.2;
   margin-bottom: 20px;
   letter-spacing: .05em;
+}
+
+/*--------------------------------
+ profile_img
+---------------------------------*/
+
+.profile{
+  display: inline-block;
+  text-align: center;
+  padding:  0 0 40px 0;
+}
+
+.profile img{
+  width: 40%;
 }
 
 /*--------------------------------
