@@ -183,6 +183,10 @@ li {
   opacity: .9;
 }
 
+.more a{
+  color: #333;
+}
+
 .more:hover {
   opacity: .9;
 }
