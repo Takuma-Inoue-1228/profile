@@ -209,9 +209,25 @@ li {
 /*--------------------------------
  Contact
 ---------------------------------*/
-.qr{
-  flex: 0 0 20%;
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
+
+.contact_text{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.contact img{
+  width: 100px;
+  text-align: center;
+}
+
 
 /*--------------------------------
  ページトップ
