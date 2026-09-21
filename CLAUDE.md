@@ -41,7 +41,7 @@ CSS は `css/style.css` に集約。`css/ress.css` はリセット専用でサ�
 2. PC幅とスマホ幅の両方で見た目を確認する
 3. 日本語でコミットする
 4. push の前に確認を取る
-5. 改修内容は Notion ページ「takuma-inoue.comのAzure移行」末尾の「変更履歴」に追記する
+5. 改修内容は Notion ページ「takuma-inoue.com運用ガイドPj」末尾の「変更履歴」に追記する
 
 ## デザイン変更の範囲
 
