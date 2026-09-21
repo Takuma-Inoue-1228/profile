@@ -78,8 +78,9 @@
   margin-bottom: 6px;
 }
 
-/* 資格コードが途中で改行されないようにする */
+/* 資格コードは常に次の行へ。コード自体は途中で改行させない */
 .cert-code {
+  display: block;
   white-space: nowrap;
 }
 
