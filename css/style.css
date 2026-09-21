@@ -231,6 +231,17 @@ li {
   text-align: center;
 }
 
+.contact-icon svg{
+  width: 30px;
+  height: 30px;
+  color: #333;
+}
+
+.contact-note{
+  margin-top: 50px;
+  text-align: center;
+}
+
 
 /*--------------------------------
  ページトップ
