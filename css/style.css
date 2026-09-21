@@ -75,7 +75,9 @@ li {
 }
 
 .lead {
-  margin-bottom: 30px;
+  /* 本文の横幅はCareerページと揃える */
+  max-width: 860px;
+  margin: 0 auto 30px;
 }
 
 /*--------------------------------
@@ -452,6 +454,9 @@ table{
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
+  /* 本文の横幅はCareerページと揃える */
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 table tr{
@@ -459,16 +464,16 @@ table tr{
 }
 
 table th{
-  text-align: center;
+  text-align: left;
   font-weight: normal;
-  width:20%;
+  width:25%;
   padding: 15px 0;
 }
 
 table td{
-  text-align: center;
+  text-align: left;
   font-weight: normal;
-  width:80%;
+  width:75%;
   padding: 15px 0;
 }
 
