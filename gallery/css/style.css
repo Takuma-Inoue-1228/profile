@@ -58,6 +58,7 @@ li {
   line-height: 1.2;
   margin-right: 20px;
   letter-spacing: .05em;
+  white-space: nowrap;
 }
 
 .header-logo a {
@@ -88,7 +89,7 @@ li {
 main {
   width: 800px;
   padding: 5px;
-  padding-top: 50px;
+  padding-top: 40px;
   box-sizing: border-box;
   margin: 0 auto;
   /* background-color:rgb(107, 205, 218) ; */
@@ -181,6 +182,35 @@ p {
   }
   .hes-gallery {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ヘッダーのブレークポイントは共通CSS(css/style.css)と揃える */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .header-inner {
+    padding: 20px;
+  }
+  .header-logo {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .header-nav-list {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .header-nav-item a {
+    font-size: 11px;
+  }
+  main {
+    padding-top: 60px;
   }
 }
 

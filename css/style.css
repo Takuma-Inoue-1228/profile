@@ -37,6 +37,8 @@ li {
 ---------------------------------*/
 .section {
   padding: 80px 0;
+  /* 固定ヘッダーの高さ分、アンカー遷移時の位置をずらす */
+  scroll-margin-top: 90px;
 }
 
 .inner {
@@ -89,6 +91,7 @@ li {
   line-height: 1.2;
   margin-right: 20px;
   letter-spacing: .05em;
+  white-space: nowrap;
 }
 
 .header-logo a {
@@ -285,6 +288,11 @@ li {
     padding: 60px 0;
   }
 
+  /* 固定ヘッダーが狭い画面で2行になるため、先頭セクションはその分を空ける */
+  .content > .section:first-child {
+    padding-top: 120px;
+  }
+
   .inner {
     padding: 0 20px;
   }
@@ -295,7 +303,13 @@ li {
   }
 
   .header-logo {
-    font-size: 16px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .header-nav-list {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .header-nav-item:not(:last-child) {
