@@ -367,12 +367,15 @@ li {
 
   /* ヘッダー */
   .header-inner {
-    padding: 20px;
+    padding: 20px 16px;
   }
 
+  /* ロゴを2行にしてナビを1行に収める */
   .header-logo {
     font-size: 14px;
     margin-right: 10px;
+    white-space: normal;
+    width: min-content;
   }
 
   .header-nav-list {
@@ -381,11 +384,11 @@ li {
   }
 
   .header-nav-item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .header-nav-item a {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   /* スプリットスクリーン */

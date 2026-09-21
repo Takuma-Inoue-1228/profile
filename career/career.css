@@ -26,6 +26,16 @@
   margin-bottom: 15px;
 }
 
+/* 期間は会社名・職種と行を分けて読みやすくする */
+.career-period {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: .1em;
+  color: #797979;
+  margin-bottom: 6px;
+}
+
 .career-location {
   font-size: 12px;
   color: #797979;
