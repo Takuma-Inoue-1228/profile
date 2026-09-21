@@ -159,14 +159,6 @@ li {
   background-size: cover;
 }
 
-.split-title {
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  letter-spacing: .05em;
-}
-
 /*--------------------------------
  profile_img
 ---------------------------------*/
@@ -362,13 +354,13 @@ li {
   /* レイアウト */
   .section {
     padding: 60px 0;
-    /* 狭い画面はヘッダーが2行になるため、アンカー遷移時に見出しが隠れないようずらす */
-    scroll-margin-top: 40px;
+    /* アンカー遷移時に見出しが固定ヘッダーに隠れないようずらす */
+    scroll-margin-top: 70px;
   }
 
-  /* 固定ヘッダーが狭い画面で2行になるため、先頭セクションはその分を空ける */
+  /* 先頭セクションは固定ヘッダーの高さ分を空ける */
   .content > .section:first-child {
-    padding-top: 120px;
+    padding-top: 90px;
   }
 
   .inner {
@@ -380,12 +372,9 @@ li {
     padding: 20px 16px;
   }
 
-  /* ロゴを2行にしてナビを1行に収める */
   .header-logo {
     font-size: 14px;
     margin-right: 10px;
-    white-space: normal;
-    width: min-content;
   }
 
   .header-nav-list {
@@ -393,8 +382,9 @@ li {
     justify-content: flex-end;
   }
 
+  /* 幅360pxの端末でもヘッダーを1行に収める */
   .header-nav-item:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 6px;
   }
 
   .header-nav-item a {
@@ -417,10 +407,6 @@ li {
     height: 67vh;
     margin-bottom: 20px;
     background-image: url("/img/_TAK3617-2.jpg");
-  }
-
-  .split-title {
-    font-size: 32px;
   }
 
   /* Gallery */
