@@ -11,8 +11,10 @@
   margin-bottom: 0;
 }
 
+/* 本文は資格リストと同じ幅に揃え、左右に余白を確保する */
 .career-history-item {
-  margin-bottom: 50px;
+  max-width: 860px;
+  margin: 0 auto 50px;
 }
 
 .career-history-item:last-child {
@@ -38,8 +40,51 @@
   margin-bottom: 0;
 }
 
+/*--------------------------------
+ 資格（カテゴリ別・2列）
+---------------------------------*/
+.cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.cert-group {
+  width: 50%;
+  padding-right: 30px;
+  margin-bottom: 40px;
+}
+
+.cert-category {
+  font-size: 13px;
+  letter-spacing: .1em;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.cert-group li {
+  margin-bottom: 6px;
+}
+
+/* 資格コードが途中で改行されないようにする */
+.cert-code {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 767px) {
   .career-history-item {
     margin-bottom: 40px;
+  }
+
+  .cert-group {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .cert-group:last-child {
+    margin-bottom: 0;
   }
 }

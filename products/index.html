@@ -13,6 +13,104 @@
     <link href="../css/style.css" media="all" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="canonical" href="https://takuma-inoue.com/products/" />
+
+    <!-- OGP / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="井上拓磨（Takuma Inoue）">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:url" content="https://takuma-inoue.com/products/">
+    <meta property="og:title" content="Products | 井上拓磨（Takuma Inoue）| ITコンサルタント">
+    <meta property="og:description" content="井上拓磨（Takuma Inoue）が個人で開発・公開しているアプリケーションやサイトの一覧です。">
+    <meta property="og:image" content="https://takuma-inoue.com/img/round_profile.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@takuma_1228_">
+
+    <!-- 制作物一覧の構造化データ -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "url": "https://takuma-inoue.com/products/",
+            "name": "Products | 井上拓磨（Takuma Inoue）",
+            "about": {
+                "@type": "Person",
+                "@id": "https://takuma-inoue.com/#person"
+            },
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "SoftwareSourceCode",
+                            "name": "PHP_BBS",
+                            "description": "PHPで開発した掲示板アプリケーション",
+                            "programmingLanguage": "PHP",
+                            "codeRepository": "https://github.com/Takuma-Inoue-1228/php_bbs",
+                            "author": { "@id": "https://takuma-inoue.com/#person" }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "SoftwareSourceCode",
+                            "name": "PHP_memo",
+                            "description": "PHPで開発したメモアプリケーション",
+                            "programmingLanguage": "PHP",
+                            "codeRepository": "https://github.com/Takuma-Inoue-1228/php_memo",
+                            "author": { "@id": "https://takuma-inoue.com/#person" }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "SoftwareSourceCode",
+                            "name": "Rails_Q&A",
+                            "description": "Ruby on Railsで開発したQ&Aアプリケーション",
+                            "programmingLanguage": "Ruby",
+                            "codeRepository": "https://github.com/Takuma-Inoue-1228/Rails_QandA",
+                            "author": { "@id": "https://takuma-inoue.com/#person" }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "item": {
+                            "@type": "WebApplication",
+                            "name": "React",
+                            "description": "Reactで作成したテストアプリケーション",
+                            "url": "https://blue-plant-0019b8a00.2.azurestaticapps.net/",
+                            "author": { "@id": "https://takuma-inoue.com/#person" }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "item": {
+                            "@type": "WebSite",
+                            "name": "訪問看護ステーション公式サイト（公開終了）",
+                            "description": "訪問看護ステーションの公式ホームページ。現在は公開を終了しています。",
+                            "author": { "@id": "https://takuma-inoue.com/#person" }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "item": {
+                            "@type": "WebSite",
+                            "name": "バスケサークル INV",
+                            "description": "新宿で運営しているバスケットボールサークルINVのサイト",
+                            "url": "https://inoue-takuma.notion.site/inv",
+                            "author": { "@id": "https://takuma-inoue.com/#person" }
+                        }
+                    }
+                ]
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -25,12 +123,11 @@
                 </h1>
                 <nav class="header-nav">
                     <ul class="header-nav-list">
-                        <li class="header-nav-item"><a href="/#profile">Profile</a></li>
+                        <li class="header-nav-item"><a href="/">Profile</a></li>
                         <li class="header-nav-item"><a href="/career/">Career</a></li>
                         <li class="header-nav-item"><a href="/gallery/">Gallery</a></li>
                         <li class="header-nav-item"><a href="/products/">Products</a></li>
                         <li class="header-nav-item"><a href="/contact/">Contact</a></li>
-                        <li class="header-nav-item"><a href="/schedule/">Schedule</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +138,7 @@
             <!-- products -->
             <section class="products section" id="products">
                 <div class="inner">
-                    <h2 class="title">制作物</h2>
+                    <h2 class="title">Products<span class="title-ja">制作物</span></h2>
                     <div class="gallery-list">
                         <a class="gallery-item products-item" href="https://github.com/Takuma-Inoue-1228/php_bbs" target="_blank" rel="noopener">
                             <p class="gallery-img"><img src="../img/PHP_bbs.jpg" alt="PHP掲示板アプリケーション" loading="lazy" /></p>

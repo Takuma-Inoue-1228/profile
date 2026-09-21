@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
   font-size: 14px;
@@ -37,8 +41,6 @@ li {
 ---------------------------------*/
 .section {
   padding: 80px 0;
-  /* 固定ヘッダーの高さ分、アンカー遷移時の位置をずらす */
-  scroll-margin-top: 90px;
 }
 
 .inner {
@@ -55,10 +57,21 @@ li {
   font-weight: normal;
   font-weight: bold;
   line-height: 1;
+  padding: 28px 20px;
   margin-bottom: 40px;
   letter-spacing: .05em;
   color: #333;
   text-align: center;
+  background-color: #f3f3f3;
+}
+
+/* ヘッダーのナビ名（英語）に対する日本語の補足 */
+.title-ja {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 12px;
+  letter-spacing: .1em;
 }
 
 .lead {
@@ -212,33 +225,63 @@ li {
 /*--------------------------------
  Contact
 ---------------------------------*/
-.contact{
+.sns-list{
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  margin-top: 30px;
+  max-width: 760px;
+  /* 最終行の margin-bottom を相殺する */
+  margin: 0 auto -30px;
 }
 
-.contact_text{
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 20px;
+/* 連絡先と日程調整は続けて見せるため上の余白を詰める */
+#schedule{
+  padding-top: 0;
 }
 
-.contact img{
-  width: 100px;
-  text-align: center;
+.sns-item{
+  width: 50%;
+  margin-bottom: 30px;
 }
 
-.contact-icon svg{
-  width: 30px;
-  height: 30px;
+.sns-link{
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
   color: #333;
 }
 
+.sns-link:hover{
+  opacity: .8;
+}
+
+.sns-icon{
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.sns-icon svg{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.sns-body{
+  min-width: 0;
+}
+
+.sns-name{
+  display: block;
+  font-weight: bold;
+}
+
+.sns-account{
+  display: block;
+  font-size: 12px;
+  color: #1ca9e3;
+  overflow-wrap: break-word;
+}
+
 .contact-note{
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -294,9 +337,21 @@ li {
     margin-bottom: 20px;
   }
 
+  .title-ja {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  /* Contact */
+  .sns-item {
+    width: 100%;
+  }
+
   /* レイアウト */
   .section {
     padding: 60px 0;
+    /* 狭い画面はヘッダーが2行になるため、アンカー遷移時に見出しが隠れないようずらす */
+    scroll-margin-top: 40px;
   }
 
   /* 固定ヘッダーが狭い画面で2行になるため、先頭セクションはその分を空ける */
@@ -305,7 +360,7 @@ li {
   }
 
   .inner {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   /* ヘッダー */
