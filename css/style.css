@@ -164,7 +164,6 @@ li {
 ---------------------------------*/
 
 .profile{
-  display: inline-block;
   text-align: center;
   padding:  0 0 40px 0;
 }
@@ -453,8 +452,8 @@ table{
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  /* 本文の横幅はCareerページと揃える */
-  max-width: 860px;
+  /* プロフィールの表。写真と同じくらいの幅にして中央にまとめる */
+  max-width: 480px;
   margin: 0 auto;
 }
 
