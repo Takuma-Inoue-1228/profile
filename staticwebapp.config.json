@@ -1,0 +1,12 @@
+{
+  "routes": [
+    { "route": "/img/*", "headers": { "Cache-Control": "public, max-age=2592000" } },
+    { "route": "/gallery/img/*", "headers": { "Cache-Control": "public, max-age=2592000" } },
+    { "route": "/css/*", "headers": { "Cache-Control": "public, max-age=86400" } },
+    { "route": "/js/*", "headers": { "Cache-Control": "public, max-age=86400" } },
+    { "route": "/career/career.css", "headers": { "Cache-Control": "public, max-age=86400" } },
+    { "route": "/gallery/css/*", "headers": { "Cache-Control": "public, max-age=86400" } },
+    { "route": "/gallery/js/*", "headers": { "Cache-Control": "public, max-age=86400" } },
+    { "route": "/gallery/hes-gallery/*", "headers": { "Cache-Control": "public, max-age=86400" } }
+  ]
+}
